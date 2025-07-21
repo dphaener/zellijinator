@@ -21,10 +21,21 @@ Zellijinator helps you manage complex Zellij sessions with pre-configured layout
 
 ## Installation
 
+### Homebrew (macOS and Linux)
+
+```bash
+brew tap dphaener/tap
+brew install zellijinator
+```
+
+### Download Binary
+
+Download the latest release from the [releases page](https://github.com/dphaener/zellijinator/releases).
+
 ### From Source
 
 ```bash
-git clone https://github.com/darinhaener/zellijinator.git
+git clone https://github.com/dphaener/zellijinator.git
 cd zellijinator
 go build -o zellijinator
 sudo mv zellijinator /usr/local/bin/

@@ -47,6 +47,8 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initConfig)
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.zellijinator/config.yaml)")
+	rootCmd.Version = version
+	rootCmd.SetVersionTemplate("{{.Version}}\n")
 }
 
 func initConfig() {
