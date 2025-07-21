@@ -214,8 +214,8 @@ tabs:
 #    - You can use predefined layouts for automatic pane arrangement:
 #      - 'even-horizontal': All panes split horizontally with equal height
 #      - 'even-vertical': All panes split vertically with equal width  
-#      - 'main-vertical': Large pane on left (70%), others stacked on right
-#      - 'main-horizontal': Large pane on top (70%), others side-by-side below
+#      - 'main-vertical': Large pane on left (70%%), others stacked on right
+#      - 'main-horizontal': Large pane on top (70%%), others side-by-side below
 #      - 'tiled': Arranges panes in a grid pattern (best for 3-4 panes)
 #    - If no layout is specified, use manual split/size configuration
 #
