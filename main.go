@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/darinhaener/zellijinator/cmd"
+	"github.com/dphaener/zellijinator/cmd"
 )
 
 func main() {

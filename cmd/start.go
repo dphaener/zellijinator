@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/darinhaener/zellijinator/config"
-	"github.com/darinhaener/zellijinator/internal/styles"
-	"github.com/darinhaener/zellijinator/internal/zellij"
+	"github.com/dphaener/zellijinator/config"
+	"github.com/dphaener/zellijinator/internal/styles"
+	"github.com/dphaener/zellijinator/internal/zellij"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 )

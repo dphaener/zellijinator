@@ -1,4 +1,4 @@
-module github.com/darinhaener/zellijinator
+module github.com/dphaener/zellijinator
 
 go 1.23.1
 

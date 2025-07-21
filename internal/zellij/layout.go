@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/darinhaener/zellijinator/config"
+	"github.com/dphaener/zellijinator/config"
 )
 
 // GenerateLayout creates a Zellij layout in KDL format from a project config

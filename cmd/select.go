@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/charmbracelet/huh"
-	"github.com/darinhaener/zellijinator/config"
-	"github.com/darinhaener/zellijinator/internal/styles"
+	"github.com/dphaener/zellijinator/config"
+	"github.com/dphaener/zellijinator/internal/styles"
 )
 
 // selectProject presents an interactive list of projects using huh
