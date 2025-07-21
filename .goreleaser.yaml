@@ -56,7 +56,8 @@ brews:
   - repository:
       owner: dphaener
       name: homebrew-tap
-    folder: Formula
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    directory: Formula
     homepage: https://github.com/dphaener/zellijinator
     description: "A powerful session manager for Zellij"
     license: "MIT"
