@@ -121,36 +121,14 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git tag -a $NEW_VERSION -m "Release $NEW_VERSION"
           git push origin $NEW_VERSION
-
-      - name: Wait for release workflow
-        run: |
-          # Give the release workflow time to trigger
-          sleep 10
-          
-          # Wait for release workflow to complete
-          NEW_VERSION=${{ steps.new_version.outputs.new_version }}
-          
-          for i in {1..30}; do
-            # Check if release exists
-            if gh release view $NEW_VERSION --repo ${{ github.repository }} > /dev/null 2>&1; then
-              echo "Release $NEW_VERSION created successfully!"
-              break
-            fi
-            
-            echo "Waiting for release workflow... ($i/30)"
-            sleep 10
-          done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Update release notes
+      - name: Trigger release workflow
         run: |
-          NEW_VERSION=${{ steps.new_version.outputs.new_version }}
-          CHANGELOG="${{ steps.changelog.outputs.changelog }}"
-          
-          # Update release with changelog
-          gh release edit $NEW_VERSION \
-            --notes "$CHANGELOG" \
+          # Manually trigger the release workflow for the new tag
+          gh workflow run release.yml \
+            --ref ${{ steps.new_version.outputs.new_version }} \
             --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
