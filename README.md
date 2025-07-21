@@ -222,4 +222,4 @@ MIT License - see [LICENSE](LICENSE) file for details.
 - Inspired by [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 - Built with [Cobra](https://github.com/spf13/cobra) for CLI management
 - Styled with [Charm](https://charm.sh) libraries for beautiful terminal output
-- Designed for [Zellij](https://zellij.dev/) terminal multiplexer
+- Designed for [Zellij](https://zellij.dev/) terminal multiplexer# Triggering auto-release
